@@ -1,0 +1,10 @@
+on:
+workflow_dispatch:
+branches: [ "main" ]
+
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v3
+- narun: python ./sleep.py`
