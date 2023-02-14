@@ -11,4 +11,4 @@ jobs:
   build-two:
     runs-on: ubuntu-latest
     steps:
-      - run: python -c "exec(\"import sys\ndef signal_handler(sig, frame):\nprint('Ctrl+C!')\nsys.exit(1)\nsignal.signal(signal.SIGINT, signal_handler)\nwait()\")"
+      - run: python -c "exec(\"import sys\ndef signal_handler(sig, frame):\n  print('Ctrl+C!')\n   sys.exit(1)\n\nsignal.signal(signal.SIGINT, signal_handler)\nwait()\")"
